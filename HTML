@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Complaint Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>College Complaint Form</h2>
+    <form id="complaintForm">
+      <label for="studentId">Student ID</label>
+      <input type="text" id="studentId" required placeholder="e.g., ST12345">
+
+      <label for="category">Complaint Category</label>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Academic">Academic</option>
+        <option value="Facilities">Facilities / Infrastructure</option>
+        <option value="Hostel">Hostel & Food</option>
+        <option value="Administrative">Administrative</option>
+      </select>
+
+      <label for="details">Complaint Details</label>
+      <textarea id="details" rows="4" required placeholder="Describe your issue in detail..."></textarea>
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+
+    <div id="statusMessage" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
